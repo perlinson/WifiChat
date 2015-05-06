@@ -1,4 +1,4 @@
-﻿package hillfly.wifichat.util;
+package hillfly.wifichat.util;
 
 import hillfly.wifichat.BaseApplication;
 import hillfly.wifichat.activity.wifiap.TimerCheck;
@@ -175,6 +175,7 @@ public class WifiUtils {
             return i;
         }
         catch (Exception localException) {
+            localException.printStackTrace();
         }
         return 4;
     }
@@ -218,7 +219,7 @@ public class WifiUtils {
 
     /**
      * Function: 连接Wifi热点 <br>
-     * 
+     *
      * @date 2015年2月14日 上午11:17
      * @change hillfly
      * @version 1.0
